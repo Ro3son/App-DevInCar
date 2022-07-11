@@ -1,0 +1,15 @@
+C:\Users\PC\Desktop\MYGITHUB\repos\App-DevInCar\myproject\obj\Debug\net6.0\MyProject.csproj.AssemblyReference.cache
+C:\Users\PC\Desktop\MYGITHUB\repos\App-DevInCar\myproject\obj\Debug\net6.0\MyProject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\Desktop\MYGITHUB\repos\App-DevInCar\myproject\obj\Debug\net6.0\MyProject.AssemblyInfoInputs.cache
+C:\Users\PC\Desktop\MYGITHUB\repos\App-DevInCar\myproject\obj\Debug\net6.0\MyProject.AssemblyInfo.cs
+C:\Users\PC\Desktop\MYGITHUB\repos\App-DevInCar\myproject\obj\Debug\net6.0\MyProject.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\MYGITHUB\repos\App-DevInCar\myproject\bin\Debug\net6.0\MyProject.exe
+C:\Users\PC\Desktop\MYGITHUB\repos\App-DevInCar\myproject\bin\Debug\net6.0\MyProject.deps.json
+C:\Users\PC\Desktop\MYGITHUB\repos\App-DevInCar\myproject\bin\Debug\net6.0\MyProject.runtimeconfig.json
+C:\Users\PC\Desktop\MYGITHUB\repos\App-DevInCar\myproject\bin\Debug\net6.0\MyProject.dll
+C:\Users\PC\Desktop\MYGITHUB\repos\App-DevInCar\myproject\bin\Debug\net6.0\MyProject.pdb
+C:\Users\PC\Desktop\MYGITHUB\repos\App-DevInCar\myproject\obj\Debug\net6.0\MyProject.dll
+C:\Users\PC\Desktop\MYGITHUB\repos\App-DevInCar\myproject\obj\Debug\net6.0\refint\MyProject.dll
+C:\Users\PC\Desktop\MYGITHUB\repos\App-DevInCar\myproject\obj\Debug\net6.0\MyProject.pdb
+C:\Users\PC\Desktop\MYGITHUB\repos\App-DevInCar\myproject\obj\Debug\net6.0\MyProject.genruntimeconfig.cache
+C:\Users\PC\Desktop\MYGITHUB\repos\App-DevInCar\myproject\obj\Debug\net6.0\ref\MyProject.dll
