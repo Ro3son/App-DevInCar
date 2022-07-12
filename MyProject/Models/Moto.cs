@@ -2,15 +2,15 @@ namespace Automovel
 {
     public class Moto : Veiculo
     {
-        public int _rodas = 2;
+        public int rodas = 2;
         public Moto(
             string chassi,
             string placa,
-            string marca,
+            string modelo,
             int data,
             double potencia,
             string cor,
             decimal valor
-        ) : base(chassi, placa, marca, data, potencia, cor, valor) { }
+        ) : base(chassi, placa, modelo, data, potencia, cor, valor) { }
     }
 }
