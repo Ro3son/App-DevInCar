@@ -4,7 +4,7 @@ namespace Automovel
     {
         public string NumeroChassi { get; set; }
         public string Placa { get; set; }
-        public string NomeMarca { get; set; }
+        public string NomeModelo { get; set; }
         public int DataFabricacao { get; set; }
         public double Potencia { get; set; }
         public string Cor { get; set; }
@@ -14,7 +14,7 @@ namespace Automovel
         public Veiculo(
             string chassi,
             string placa,
-            string marca,
+            string modelo,
             int data,
             double potencia,
             string cor,
@@ -23,7 +23,7 @@ namespace Automovel
         {
             NumeroChassi = chassi;
             Placa = placa;
-            NomeMarca = marca;
+            NomeModelo = modelo;
             DataFabricacao = data;
             Potencia = potencia;
             Cor = cor;
@@ -31,7 +31,7 @@ namespace Automovel
         }
         public void VenderVeiculos() 
         { 
-
+           
         }
     }
 }
