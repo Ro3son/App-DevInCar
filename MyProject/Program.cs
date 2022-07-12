@@ -6,15 +6,19 @@ namespace Automovel
     {
         static void Main()
         {
-            Moto moto = new Moto();
-            moto.NumeroChassi = "123ERTGCH234";
-            moto.Potencia = 15.1;
-            moto.Rodas = 2;
-
+            Moto moto = new Moto(
+                "CHASSI12454T4T456",
+                "PLC123",
+                "Honda",
+                2021,
+                15.1,
+                "Preto",
+                12.000m
+            );
             Console.WriteLine(
-                @$"Chassi: {moto.NumeroChassi}, 
+            @$"Chassi: {moto.NumeroChassi}, 
             Potência: {moto.Potencia} (cv),
-            Rodas: {moto.Rodas}"
+            Rodas: {moto._rodas}"
             );
         }
     }
