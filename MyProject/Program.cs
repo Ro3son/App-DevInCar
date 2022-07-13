@@ -32,9 +32,8 @@ namespace Automovel
                         foreach (var moto in motos)
                         {
                             Console.WriteLine(
-                                @$"Chassi: {moto.NumeroChassi}, Placa: {moto.Placa}, Modelo: {moto.NomeModelo},
-                                Potência: {moto.Potencia} (cv),  Ano: {moto.DataFabricacao}, Cor: {moto.Cor},
-                                Preço: {moto.Valor} "
+                                $"Chassi: {moto.NumeroChassi}, Placa: {moto.Placa}, Modelo: {moto.NomeModelo}" +
+                                $"Potência: {moto.Potencia} (cv),  Ano: {moto.DataFabricacao}, Cor: {moto.Cor}, Preço: {moto.Valor} "
                             );
                         }
 
