@@ -1,3 +1,5 @@
+using static System.Console;
+
 namespace Automovel.Models
 {
     public class Moto : Veiculo
@@ -12,5 +14,24 @@ namespace Automovel.Models
             string cor,
             decimal valor
         ) : base(chassi, placa, modelo, data, potencia, cor, valor) { }
+
+        public override void VenderVeiculos()
+        {
+            WriteLine("Deseja vender o veículo disponível? (s/n)");
+            var entrada = ReadLine();
+            if (entrada == "s")
+            {
+                WriteLine("Digite o ID(placa) do veículo: ");
+                var id = ReadLine();
+                WriteLine("Digite o CPF(somente números) do comprador: ");
+                var cpf = ReadLine();
+                WriteLine("Digite o valor do veículo: ");
+                var valor = ReadLine();
+                WriteLine("\n ---- Motos Vendidas ---- \n");
+                Console.ForegroundColor = ConsoleColor.Red;
+                WriteLine($"Placa: {id}, CPF comprador {cpf}, Valor: {valor} \n");
+                Console.ResetColor();
+            }
+        }
     }
 }
