@@ -1,6 +1,6 @@
 namespace Automovel.Models
 {
-    public class Veiculo
+    public abstract class Veiculo
     {
         public string NumeroChassi { get; set; }
         public string Placa { get; set; }
@@ -29,9 +29,6 @@ namespace Automovel.Models
             Cor = cor;
             Valor = valor;
         }
-        public void VenderVeiculos() 
-        { 
-           
-        }
+        public abstract void VenderVeiculos();
     }
 }
