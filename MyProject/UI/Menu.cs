@@ -19,6 +19,7 @@ namespace Automovel.UI
                 "0 - Sair\n"
             );
             Console.ResetColor();
+
         }
 
         public static void ExecutarPrograma()
@@ -67,12 +68,9 @@ namespace Automovel.UI
                                     + $"Potência: {moto.Potencia} (cv),  Ano: {moto.DataFabricacao}, Cor: {moto.Cor}, Preço: {moto.Valor}\n"
                             );
                             Console.ResetColor();
-                        }
 
-                        WriteLine("\n ---- Motos Vendidas ---- \n");
-                        Console.ForegroundColor = ConsoleColor.Red;
-                        WriteLine("Placa: RFM345, Modelo: Titan, Valor: 6.000 \n");
-                        Console.ResetColor();
+                            moto.VenderVeiculos();
+                        }
 
                         WriteLine("---- Motos vendidas com o maior preço ----");
 
