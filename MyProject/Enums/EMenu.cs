@@ -1,9 +1,9 @@
-public enum EMenu
+public enum ETipo
 {
     Sair,
-    Motos,
+    Moto,
     Triciclo,
-    Carros,
+    Carro,
     Camionete,
     Todos
 }
