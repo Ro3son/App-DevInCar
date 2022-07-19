@@ -30,6 +30,7 @@ namespace Automovel.Models
                 WriteLine("\n ---- Motos Vendidas ---- \n");
                 Console.ForegroundColor = ConsoleColor.Red;
                 WriteLine($"Placa: {id}, CPF comprador {cpf}, Valor: {valor} \n");
+                WriteLine($"Placa: BRA2S5, CPF comprador 11122233345, Valor: 12,600 \n");
                 ResetColor();
             }
         }
