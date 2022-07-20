@@ -12,7 +12,6 @@ namespace Automovel
             Menu.MostrarMenu();
             ExecutarPrograma();
         }
-
         public static void ExecutarPrograma()
         {
             List<Veiculo> veiculos = new List<Veiculo>();
@@ -36,26 +35,51 @@ namespace Automovel
                 {
                     case ETipo.Moto:
 
-                        WriteLine("\n ---- Motos Disponíveis ---- \n");
+                        WriteLine($"\n ---- Motos Disponíveis({veiculos.Count()}) ---- \n");
 
                         var motos =
                             from veiculo in veiculos
                             where veiculo.Tipo == ETipo.Moto
                             select veiculo;
 
-                        foreach (var moto in motos)
-                        {
-                            Console.ForegroundColor = ConsoleColor.DarkGreen;
+
+                        foreach (Moto moto in motos)
+                        {   
+                            WriteLine($"\n ---- Disponível para venda ---- \n");
+                            ForegroundColor = ConsoleColor.DarkGreen;
                             WriteLine(
-                                $"Chassi: {moto.NumeroChassi}, Placa: {moto.Placa}, Modelo: {moto.NomeModelo}\n" +
+                                $"Chassi: {moto.NumeroChassi}, Placa: {moto.Placa}, Modelo: {moto.NomeModelo} Rodas: {moto.rodas}\n" +
                                 $"Potência: {moto.Potencia} (cv), Ano: {moto.DataFabricacao}, Cor: {moto.Cor}, Preço: {moto.Valor}\n"
                             );
                             ResetColor();
+
+                            moto.VenderVeiculos();
+                            // Jogar no Histórico de Vendas?
+                            if (moto.Valor >= 13.000m)
+                            {
+                                WriteLine("\n ---- Motos com o maior preço ---- \n");
+                                ForegroundColor = ConsoleColor.DarkYellow;
+                                WriteLine(
+                                    $"Chassi: {moto.NumeroChassi}, Placa: {moto.Placa}, Modelo: {moto.NomeModelo} Rodas: {moto.rodas}\n"
+                                        + $"Potência: {moto.Potencia} (cv), Ano: {moto.DataFabricacao}, Cor: {moto.Cor}, Preço: {moto.Valor}\n"
+                                );
+                                ResetColor();
+                            }
+                            else
+                            {
+                                WriteLine("\n ---- Motos com menor preço ---- \n");
+                                ForegroundColor = ConsoleColor.DarkYellow;
+                                WriteLine(
+                                    $"Chassi: {moto.NumeroChassi}, Placa: {moto.Placa}, Modelo: {moto.NomeModelo} Rodas: {moto.rodas}\n"
+                                        + $"Potência: {moto.Potencia} (cv), Ano: {moto.DataFabricacao}, Cor: {moto.Cor}, Preço: {moto.Valor}\n"
+                                );
+                                ResetColor();
+                            }
+
                         }
+    
+                        // moto.VenderVeiculos();
 
-                        WriteLine("---- Motos vendidas com o maior preço ----");
-
-                        WriteLine("---- Motos vendidas com menor preço ----");
                     break;
                 }
             }
