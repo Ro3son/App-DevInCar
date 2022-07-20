@@ -45,7 +45,7 @@ namespace Automovel
 
                         foreach (Moto moto in motos)
                         {   
-                            WriteLine($"\n ---- Disponível para venda ---- \n");
+
                             ForegroundColor = ConsoleColor.DarkGreen;
                             WriteLine(
                                 $"Chassi: {moto.NumeroChassi}, Placa: {moto.Placa}, Modelo: {moto.NomeModelo} Rodas: {moto.rodas}\n" +
@@ -54,31 +54,33 @@ namespace Automovel
                             ResetColor();
 
                             moto.VenderVeiculos();
-                            // Jogar no Histórico de Vendas?
-                            if (moto.Valor >= 13.000m)
-                            {
-                                WriteLine("\n ---- Motos com o maior preço ---- \n");
-                                ForegroundColor = ConsoleColor.DarkYellow;
-                                WriteLine(
-                                    $"Chassi: {moto.NumeroChassi}, Placa: {moto.Placa}, Modelo: {moto.NomeModelo} Rodas: {moto.rodas}\n"
-                                        + $"Potência: {moto.Potencia} (cv), Ano: {moto.DataFabricacao}, Cor: {moto.Cor}, Preço: {moto.Valor}\n"
-                                );
-                                ResetColor();
-                            }
-                            else
-                            {
-                                WriteLine("\n ---- Motos com menor preço ---- \n");
-                                ForegroundColor = ConsoleColor.DarkYellow;
-                                WriteLine(
-                                    $"Chassi: {moto.NumeroChassi}, Placa: {moto.Placa}, Modelo: {moto.NomeModelo} Rodas: {moto.rodas}\n"
-                                        + $"Potência: {moto.Potencia} (cv), Ano: {moto.DataFabricacao}, Cor: {moto.Cor}, Preço: {moto.Valor}\n"
-                                );
-                                ResetColor();
-                            }
-
+                
                         }
-    
-                        // moto.VenderVeiculos();
+                        
+                        // foreach(Moto moto in motos) 
+                        // {
+                        //     // Jogar no Histórico de Vendas?
+                        //     if (moto.Valor >= 13.000m)
+                        //     {
+                        //         WriteLine("\n ---- Motos com o maior preço ---- \n");
+                        //         ForegroundColor = ConsoleColor.DarkYellow;
+                        //         WriteLine(
+                        //             $"Chassi: {moto.NumeroChassi}, Placa: {moto.Placa}, Modelo: {moto.NomeModelo} Rodas: {moto.rodas}\n"
+                        //                 + $"Potência: {moto.Potencia} (cv), Ano: {moto.DataFabricacao}, Cor: {moto.Cor}, Preço: {moto.Valor}\n"
+                        //         );
+                        //         ResetColor();
+                        //     }
+                        //     else
+                        //     {
+                        //         WriteLine("\n ---- Motos com menor preço ---- \n");
+                        //         ForegroundColor = ConsoleColor.DarkYellow;
+                        //         WriteLine(
+                        //             $"Chassi: {moto.NumeroChassi}, Placa: {moto.Placa}, Modelo: {moto.NomeModelo} Rodas: {moto.rodas}\n"
+                        //                 + $"Potência: {moto.Potencia} (cv), Ano: {moto.DataFabricacao}, Cor: {moto.Cor}, Preço: {moto.Valor}\n"
+                        //             );
+                        //         ResetColor();
+                        //     }
+                        // }
 
                     break;
                 }
