@@ -4,18 +4,13 @@ namespace Automovel.Models
 {
     public class Camionete : Veiculo
     {
-        private int portas;
+        public int portas = 4;
         private string combustivel;
         private int capacidadeDeCarga;
         public int CapacidadeDeCarga
         {
             get => capacidadeDeCarga;
             set => capacidadeDeCarga = value;
-        }
-        public int Portas
-        {
-            get => portas;
-            set => portas = value;
         }
         public string Combustivel
         {
@@ -37,7 +32,6 @@ namespace Automovel.Models
         ) : base(chassi, placa, modelo, data, potencia, cor, valor, tipo)
         {
             Combustivel = combustivel;
-            Portas = 4;
             CapacidadeDeCarga = carga;
         }
 
