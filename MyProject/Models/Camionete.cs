@@ -4,6 +4,25 @@ namespace Automovel.Models
 {
     public class Camionete : Veiculo
     {
+        private int portas;
+        private string combustivel;
+        private int capacidadeDeCarga;
+        public int CapacidadeDeCarga
+        {
+            get => capacidadeDeCarga;
+            set => capacidadeDeCarga = value;
+        }
+        public int Portas
+        {
+            get => portas;
+            set => portas = value;
+        }
+        public string Combustivel
+        {
+            get => combustivel;
+            set => combustivel = value;
+        }
+
         public Camionete(
             string chassi,
             string placa,
@@ -12,8 +31,15 @@ namespace Automovel.Models
             double potencia,
             string cor,
             decimal valor,
+            string combustivel,
+            int carga,
             EOpcao tipo
-        ) : base(chassi, placa, modelo, data, potencia, cor, valor, tipo) { }
+        ) : base(chassi, placa, modelo, data, potencia, cor, valor, tipo)
+        {
+            Combustivel = combustivel;
+            Portas = 4;
+            CapacidadeDeCarga = carga;
+        }
 
         public override void VenderVeiculos()
         {
