@@ -1,5 +1,3 @@
-using static System.Console;
-
 namespace Automovel.Models
 {
     public abstract class Veiculo
@@ -12,7 +10,7 @@ namespace Automovel.Models
         public string Cor { get; set; }
         public decimal Valor { get; set; }
         public int CPF { get; set; }
-        public ETipo Tipo { get; set; }
+        public EOpcao Tipo { get; set; }
 
         public Veiculo(
             string chassi,
@@ -22,7 +20,7 @@ namespace Automovel.Models
             double potencia,
             string cor,
             decimal valor,
-            ETipo tipo
+            EOpcao tipo
         )
         {
             NumeroChassi = chassi;
@@ -32,6 +30,7 @@ namespace Automovel.Models
             Potencia = potencia;
             Cor = cor;
             Valor = valor;
+            CPF = 0;
             Tipo = tipo;
         }
 
