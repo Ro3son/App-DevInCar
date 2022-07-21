@@ -1,4 +1,4 @@
-public enum ETipo
+public enum EOpcao
 {
     Sair,
     Moto,
