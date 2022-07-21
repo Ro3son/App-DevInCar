@@ -4,14 +4,8 @@ namespace Automovel.Models
 {
     public class Carro : Veiculo
     {   
-        private int portas;
+        public int portas = 4;
         private string combustivel;
-
-        public int Portas
-        {
-            get => portas;
-            set => portas = value;
-        }
         public string Combustivel { 
 
             get => combustivel; 
@@ -30,7 +24,6 @@ namespace Automovel.Models
         ) : base(chassi, placa, modelo, data, potencia, cor, valor, tipo) 
         { 
             Combustivel = combustivel; 
-            Portas = 4;
         }
 
         public override void VenderVeiculos()
