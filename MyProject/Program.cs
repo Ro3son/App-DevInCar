@@ -177,7 +177,7 @@ namespace Automovel
                             ForegroundColor = ConsoleColor.DarkGreen;
                             WriteLine(
                                 $"Chassi: {carro.NumeroChassi}, Placa: {carro.Placa}, Modelo: {carro.NomeModelo}\n" +
-                                $"Ano: {carro.DataFabricacao}, Cor: {carro.Cor}, Portas: {carro.Portas}\n" +
+                                $"Ano: {carro.DataFabricacao}, Cor: {carro.Cor}, Portas: {carro.portas}\n" +
                                 $"Potência: {carro.Potencia} (cv), Combustível: {carro.Combustivel}, Preço: {carro.Valor}\n"
                             );
                             ResetColor();
@@ -196,7 +196,7 @@ namespace Automovel
                             ForegroundColor = ConsoleColor.DarkYellow;
                             WriteLine(
                                 $"Chassi: {carro.NumeroChassi}, Placa: {carro.Placa}, Modelo: {carro.NomeModelo}\n" +
-                                $"Ano: {carro.DataFabricacao}, Cor: {carro.Cor}, Portas: {carro.Portas}\n" +
+                                $"Ano: {carro.DataFabricacao}, Cor: {carro.Cor}, Portas: {carro.portas}\n" +
                                 $"Potência: {carro.Potencia} (cv), Combustível: {carro.Combustivel}, Preço: {carro.Valor}\n"
                             );
                             ResetColor();
@@ -213,7 +213,7 @@ namespace Automovel
                             ForegroundColor = ConsoleColor.DarkYellow;
                             WriteLine(
                                $"Chassi: {carro.NumeroChassi}, Placa: {carro.Placa}, Modelo: {carro.NomeModelo}\n" +
-                               $"Ano: {carro.DataFabricacao}, Cor: {carro.Cor}, Portas: {carro.Portas}\n" +
+                               $"Ano: {carro.DataFabricacao}, Cor: {carro.Cor}, Portas: {carro.portas}\n" +
                                $"Potência: {carro.Potencia} (cv), Combustível: {carro.Combustivel}, Preço: {carro.Valor}\n"
                             );
                             ResetColor();
@@ -234,7 +234,7 @@ namespace Automovel
                             ForegroundColor = ConsoleColor.DarkGreen;
                             WriteLine(
                                 $"Chassi: {camionete.NumeroChassi}, Placa: {camionete.Placa}, Modelo: {camionete.NomeModelo}\n" +
-                                $"Ano: {camionete.DataFabricacao}, Cor: {camionete.Cor}, Portas: {camionete.Portas}, Capacidade Caçamba: {camionete.CapacidadeDeCarga}(l)\n" +
+                                $"Ano: {camionete.DataFabricacao}, Cor: {camionete.Cor}, Portas: {camionete.portas}, Capacidade Caçamba: {camionete.CapacidadeDeCarga}(l)\n" +
                                 $"Potência: {camionete.Potencia} (cv), Combustível: {camionete.Combustivel}, Preço: {camionete.Valor}\n"
                             );
                             ResetColor();
@@ -253,7 +253,7 @@ namespace Automovel
                             ForegroundColor = ConsoleColor.DarkYellow;
                             WriteLine(
                                 $"Chassi: {camionete.NumeroChassi}, Placa: {camionete.Placa}, Modelo: {camionete.NomeModelo}\n" +
-                                $"Ano: {camionete.DataFabricacao}, Cor: {camionete.Cor}, Portas: {camionete.Portas}, Capacidade Caçamba: {camionete.CapacidadeDeCarga}(l)\n" +
+                                $"Ano: {camionete.DataFabricacao}, Cor: {camionete.Cor}, Portas: {camionete.portas}, Capacidade Caçamba: {camionete.CapacidadeDeCarga}(l)\n" +
                                 $"Potência: {camionete.Potencia} (cv), Combustível: {camionete.Combustivel}, Preço: {camionete.Valor}\n"
                             );
                             ResetColor();
@@ -270,7 +270,7 @@ namespace Automovel
                             ForegroundColor = ConsoleColor.DarkYellow;
                             WriteLine(
                                 $"Chassi: {camionete.NumeroChassi}, Placa: {camionete.Placa}, Modelo: {camionete.NomeModelo}\n" +
-                                $"Ano: {camionete.DataFabricacao}, Cor: {camionete.Cor}, Portas: {camionete.Portas}, Capacidade Caçamba: {camionete.CapacidadeDeCarga}(l)\n" +
+                                $"Ano: {camionete.DataFabricacao}, Cor: {camionete.Cor}, Portas: {camionete.portas}, Capacidade Caçamba: {camionete.CapacidadeDeCarga}(l)\n" +
                                 $"Potência: {camionete.Potencia}(cv), Combustível: {camionete.Combustivel}, Preço: {camionete.Valor}\n"
                             );
                             ResetColor();
