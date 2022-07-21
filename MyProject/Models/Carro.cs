@@ -3,7 +3,20 @@ using static System.Console;
 namespace Automovel.Models
 {
     public class Carro : Veiculo
-    {  
+    {   
+        private int portas;
+        private string combustivel;
+
+        public int Portas
+        {
+            get => portas;
+            set => portas = value;
+        }
+        public string Combustivel { 
+
+            get => combustivel; 
+            set => combustivel = value;
+        }
         public Carro(
             string chassi,
             string placa,
@@ -12,8 +25,13 @@ namespace Automovel.Models
             double potencia,
             string cor,
             decimal valor,
+            string combustivel,
             EOpcao tipo
-        ) : base(chassi, placa, modelo, data, potencia, cor, valor, tipo) { }
+        ) : base(chassi, placa, modelo, data, potencia, cor, valor, tipo) 
+        { 
+            Combustivel = combustivel; 
+            Portas = 4;
+        }
 
         public override void VenderVeiculos()
         {
