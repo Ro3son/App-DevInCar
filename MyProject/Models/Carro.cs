@@ -3,14 +3,11 @@ using static System.Console;
 namespace Automovel.Models
 {
     public class Carro : Veiculo
-    {   
+    {
         public int portas = 4;
-        private string combustivel;
-        public string Combustivel { 
+        private string? combustivel;
+        public string Combustivel { get; set; }
 
-            get => combustivel; 
-            set => combustivel = value;
-        }
         public Carro(
             string chassi,
             string placa,
@@ -20,10 +17,10 @@ namespace Automovel.Models
             string cor,
             decimal valor,
             string combustivel,
-            EOpcao tipo
-        ) : base(chassi, placa, modelo, data, potencia, cor, valor, tipo) 
-        { 
-            Combustivel = combustivel; 
+            EMenu tipo
+        ) : base(chassi, placa, modelo, data, potencia, cor, valor, tipo)
+        {
+            Combustivel = combustivel;
         }
 
         public override void VenderVeiculos()

@@ -3,9 +3,9 @@ using static System.Console;
 namespace Automovel.Models
 {
     public class Moto : Veiculo
-    {   
-        public string brand = "Honda";
+    {
         public int rodas = 2;
+
         public Moto(
             string chassi,
             string placa,
@@ -14,7 +14,7 @@ namespace Automovel.Models
             double potencia,
             string cor,
             decimal valor,
-            EOpcao tipo
+            EMenu tipo
         ) : base(chassi, placa, modelo, data, potencia, cor, valor, tipo) { }
 
         public override void VenderVeiculos()
