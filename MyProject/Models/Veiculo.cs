@@ -10,7 +10,7 @@ namespace Automovel.Models
         public string Cor { get; set; }
         public decimal Valor { get; set; }
         public int CPF { get; set; }
-        public EOpcao Tipo { get; set; }
+        public EMenu Tipo { get; set; }
 
         public Veiculo(
             string chassi,
@@ -20,11 +20,11 @@ namespace Automovel.Models
             double potencia,
             string cor,
             decimal valor,
-            EOpcao tipo
+            EMenu tipo
         )
         {
-            NumeroChassi = chassi;
-            Placa = placa;
+            NumeroChassi = Convert.ToString(new Random().Next(17));
+            Placa = Convert.ToString(new Random().Next(7));
             NomeModelo = modelo;
             DataFabricacao = data;
             Potencia = potencia;
@@ -36,7 +36,10 @@ namespace Automovel.Models
 
         public abstract void VenderVeiculos();
 
-        public void ListarInformacoes() { }
+        public List<Veiculo> ListarInformacoes() 
+        { 
+            return new List<Veiculo>();
+        }
 
         public void EditarInformacoes() { }
     }
