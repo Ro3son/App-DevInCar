@@ -34,8 +34,15 @@ namespace Automovel.Models
             veiculos.Add(
                 new Camionete { NumeroChassi = "CHASSL3ADFTTH7OGH", Placa = "CHVR3FL", NomeModelo = "Chevrolet s10",
                 DataFabricacao = 2022, Potencia = 206.0, Valor = 113.692m, Combustivel = "Gasolina", CapacidadeDeCarga = 850, Status = EStatus.Disponivel });
+
+            veiculos.Add(
+                new Carro { NumeroChassi = "CHASSIGHJOLNQSED4", Placa = "CAR3XFV", NomeModelo = "Fiat Uno", 
+                DataFabricacao = 2019, Potencia = 75.0, Cor = "Vermelho", Valor = 43.807m, Combustivel = "Flex", Status = EStatus.Disponivel });
+            veiculos.Add(
+                new Carro { NumeroChassi = "CHASSIRFV567IJNSW", Placa = "3XFVPCO", NomeModelo = "VW Gol", 
+                DataFabricacao = 2018, Potencia = 82.0, Cor = "Preto", Valor = 47.454m, Combustivel = "Gasolina", Status = EStatus.Disponivel });
             
-            WriteLine("\n ---- Todos os veículos ---- \n");
+            WriteLine("\n ---- Todos os veículos (Disponíveis) ---- \n");
 
             foreach (var veiculo in veiculos)
             {
