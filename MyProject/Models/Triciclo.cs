@@ -36,7 +36,7 @@ namespace Automovel.Models
 
                 WriteLine("\n ---- Triciclo Vendido! ---- \n");
                 ForegroundColor = ConsoleColor.Red;
-                WriteLine($"Placa: {Placa}, CPF comprador {CPF}, Valor: {Valor} \n");
+                WriteLine($"Placa: {Placa}, CPF comprador: {CPF}, Valor: {Valor} \n");
                 ResetColor();
             }
             WriteLine("\n --------------------------------------- \n");

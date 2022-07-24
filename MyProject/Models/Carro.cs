@@ -30,19 +30,16 @@ namespace Automovel.Models
             {
                 WriteLine("Digite o ID(placa) do veículo: ");
                 Placa = ReadLine();
-                WriteLine("\n");
 
                 WriteLine("Digite o CPF(somente números) do comprador: ");
                 CPF = ReadLine();
-                WriteLine("\n");
 
                 WriteLine("Digite o valor do veículo: ");
                 Valor = Convert.ToDecimal(ReadLine());
-                WriteLine("\n");
 
                 WriteLine("\n ---- Carro Vendido! ---- \n");
                 ForegroundColor = ConsoleColor.Red;
-                WriteLine($"Placa: {Placa}, CPF comprador {CPF}, Valor: {Valor} \n");
+                WriteLine($"Placa: {Placa}, CPF comprador: {CPF}, Valor: {Valor} \n");
                 ResetColor();
             }
             WriteLine("\n --------------------------------------- \n");
