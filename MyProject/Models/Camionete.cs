@@ -91,7 +91,7 @@ namespace Automovel.Models
             {
                 ForegroundColor = ConsoleColor.DarkGreen;
                 WriteLine(
-                    $"Chassi: {camionete.NumeroChassi}, Placa: {camionete.Placa}, Modelo: {camionete.NomeModelo} Portas: {portas}\n"
+                    $"Chassi: {camionete.NumeroChassi}, Placa: {camionete.Placa}, Modelo: {camionete.NomeModelo}, Portas: {portas}\n"
                         + $"Potência: {camionete.Potencia} (kw), Ano: {camionete.DataFabricacao}, Cor: {camionete.Cor}, Preço: {camionete.Valor}\n"
                 );
                 ResetColor();
@@ -108,7 +108,7 @@ namespace Automovel.Models
             {
                 ForegroundColor = ConsoleColor.DarkGreen;
                 WriteLine(
-                    $"Chassi: {camionete.NumeroChassi}, Placa: {camionete.Placa}, Modelo: {camionete.NomeModelo} Portas: {portas}\n"
+                    $"Chassi: {camionete.NumeroChassi}, Placa: {camionete.Placa}, Modelo: {camionete.NomeModelo}, Portas: {portas}\n"
                         + $"Potência: {camionete.Potencia} (kw), Ano: {camionete.DataFabricacao}, Cor: {camionete.Cor}, Preço: {camionete.Valor}\n"
                 );
                 ResetColor();
@@ -125,7 +125,7 @@ namespace Automovel.Models
             {
                 ForegroundColor = ConsoleColor.DarkGreen;
                 WriteLine(
-                    $"Chassi: {camionete.NumeroChassi}, Placa: {camionete.Placa}, Modelo: {camionete.NomeModelo} Portas: {portas}\n"
+                    $"Chassi: {camionete.NumeroChassi}, Placa: {camionete.Placa}, Modelo: {camionete.NomeModelo}, Portas: {portas}\n"
                         + $"Potência: {camionete.Potencia} (kw), Ano: {camionete.DataFabricacao}, Cor: {camionete.Cor}, Preço: {camionete.Valor}\n"
                 );
                 ResetColor();
@@ -142,7 +142,7 @@ namespace Automovel.Models
             {
                 ForegroundColor = ConsoleColor.DarkGreen;
                 WriteLine(
-                    $"Chassi: {camionete.NumeroChassi}, Placa: {camionete.Placa}, Modelo: {camionete.NomeModelo} Portas: {portas}\n"
+                    $"Chassi: {camionete.NumeroChassi}, Placa: {camionete.Placa}, Modelo: {camionete.NomeModelo}, Portas: {portas}\n"
                         + $"Potência: {camionete.Potencia} (kw), Ano: {camionete.DataFabricacao}, Cor: {camionete.Cor}, Preço: {camionete.Valor}\n"
                 );
                 ResetColor();

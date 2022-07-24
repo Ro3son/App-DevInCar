@@ -85,7 +85,7 @@ namespace Automovel.Models
             {
                 ForegroundColor = ConsoleColor.DarkGreen;
                 WriteLine(
-                    $"Chassi: {moto.NumeroChassi}, Placa: {moto.Placa}, Modelo: {moto.NomeModelo} Rodas: {rodas}\n"
+                    $"Chassi: {moto.NumeroChassi}, Placa: {moto.Placa}, Modelo: {moto.NomeModelo}, Rodas: {rodas}\n"
                         + $"Potência: {moto.Potencia} (cv), Ano: {moto.DataFabricacao}, Cor: {moto.Cor}, Preço: {moto.Valor}\n"
                 );
                 ResetColor();
@@ -102,7 +102,7 @@ namespace Automovel.Models
             {
                 ForegroundColor = ConsoleColor.DarkGreen;
                 WriteLine(
-                    $"Chassi: {moto.NumeroChassi}, Placa: {moto.Placa}, Modelo: {moto.NomeModelo} Rodas: {rodas}\n"
+                    $"Chassi: {moto.NumeroChassi}, Placa: {moto.Placa}, Modelo: {moto.NomeModelo}, Rodas: {rodas}\n"
                         + $"Potência: {moto.Potencia} (cv), Ano: {moto.DataFabricacao}, Cor: {moto.Cor}, Preço: {moto.Valor}\n"
                 );
                 ResetColor();
@@ -119,7 +119,7 @@ namespace Automovel.Models
             {
                 ForegroundColor = ConsoleColor.DarkGreen;
                 WriteLine(
-                    $"Chassi: {moto.NumeroChassi}, Placa: {moto.Placa}, Modelo: {moto.NomeModelo} Rodas: {rodas}\n"
+                    $"Chassi: {moto.NumeroChassi}, Placa: {moto.Placa}, Modelo: {moto.NomeModelo}, Rodas: {rodas}\n"
                         + $"Potência: {moto.Potencia} (cv), Ano: {moto.DataFabricacao}, Cor: {moto.Cor}, Preço: {moto.Valor}\n"
                 );
                 ResetColor();
@@ -136,7 +136,7 @@ namespace Automovel.Models
             {
                 ForegroundColor = ConsoleColor.DarkGreen;
                 WriteLine(
-                    $"Chassi: {moto.NumeroChassi}, Placa: {moto.Placa}, Modelo: {moto.NomeModelo} Rodas: {rodas}\n"
+                    $"Chassi: {moto.NumeroChassi}, Placa: {moto.Placa}, Modelo: {moto.NomeModelo}, Rodas: {rodas}\n"
                         + $"Potência: {moto.Potencia} (cv), Ano: {moto.DataFabricacao}, Cor: {moto.Cor}, Preço: {moto.Valor}\n"
                 );
                 ResetColor();

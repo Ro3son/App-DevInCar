@@ -76,13 +76,13 @@ namespace Automovel.Models
                 where carro.Status == EStatus.Disponivel 
                 select carro;
 
-            WriteLine("\n ---- Lista de carros Disponíveis ---- \n");
+            WriteLine("\n ---- Lista de Carros Disponíveis ---- \n");
 
             foreach (var carro in carros)
             {
                 ForegroundColor = ConsoleColor.DarkGreen;
                 WriteLine(
-                    $"Chassi: {carro.NumeroChassi}, Placa: {carro.Placa}, Modelo: {carro.NomeModelo} Portas: {portas}\n"
+                    $"Chassi: {carro.NumeroChassi}, Placa: {carro.Placa}, Modelo: {carro.NomeModelo}, Portas: {portas}\n"
                         + $"Potência: {carro.Potencia} (cv), Ano: {carro.DataFabricacao}, Cor: {carro.Cor}, Preço: {carro.Valor}\n"
                 );
                 ResetColor();
@@ -93,13 +93,13 @@ namespace Automovel.Models
                 where carro.Status == EStatus.Vendido 
                 select carro;
 
-            WriteLine("\n ---- Lista de carros Vendidos ---- \n");
+            WriteLine("\n ---- Lista de Carros Vendidos ---- \n");
 
             foreach (var carro in carrosVendidos)
             {
                 ForegroundColor = ConsoleColor.DarkGreen;
                 WriteLine(
-                    $"Chassi: {carro.NumeroChassi}, Placa: {carro.Placa}, Modelo: {carro.NomeModelo} Portas: {portas}\n"
+                    $"Chassi: {carro.NumeroChassi}, Placa: {carro.Placa}, Modelo: {carro.NomeModelo}, Portas: {portas}\n"
                         + $"Potência: {carro.Potencia} (cv), Ano: {carro.DataFabricacao}, Cor: {carro.Cor}, Preço: {carro.Valor}\n"
                 );
                 ResetColor();
@@ -110,13 +110,13 @@ namespace Automovel.Models
                 where carro.Status == EStatus.VendidoMaiorValor
                 select carro;
 
-            WriteLine("\n ---- Lista de carros Vendidos (Maior Valor) ---- \n");
+            WriteLine("\n ---- Lista de Carros Vendidos (Maior Valor) ---- \n");
 
             foreach (var carro in carrosVendidosMaiorValor)
             {
                 ForegroundColor = ConsoleColor.DarkGreen;
                 WriteLine(
-                    $"Chassi: {carro.NumeroChassi}, Placa: {carro.Placa}, Modelo: {carro.NomeModelo} Portas: {portas}\n"
+                    $"Chassi: {carro.NumeroChassi}, Placa: {carro.Placa}, Modelo: {carro.NomeModelo}, Portas: {portas}\n"
                         + $"Potência: {carro.Potencia} (cv), Ano: {carro.DataFabricacao}, Cor: {carro.Cor}, Preço: {carro.Valor}\n"
                 );
                 ResetColor();
@@ -127,13 +127,13 @@ namespace Automovel.Models
                 where carro.Status == EStatus.VendidoMenorValor
                 select carro;
 
-            WriteLine("\n ---- Lista de carros Vendidas (Menor Valor) ---- \n");
+            WriteLine("\n ---- Lista de Carros Vendidas (Menor Valor) ---- \n");
 
             foreach (var carro in carrosVendidosMenorValor)
             {
                 ForegroundColor = ConsoleColor.DarkGreen;
                 WriteLine(
-                    $"Chassi: {carro.NumeroChassi}, Placa: {carro.Placa}, Modelo: {carro.NomeModelo} Portas: {portas}\n"
+                    $"Chassi: {carro.NumeroChassi}, Placa: {carro.Placa}, Modelo: {carro.NomeModelo}, Portas: {portas}\n"
                         + $"Potência: {carro.Potencia} (cv), Ano: {carro.DataFabricacao}, Cor: {carro.Cor}, Preço: {carro.Valor}\n"
                 );
                 ResetColor();

@@ -66,13 +66,13 @@ namespace Automovel.Models
                 where triciclo.Status == EStatus.Disponivel 
                 select triciclo;
 
-            WriteLine("\n ---- Lista de triciclos Disponíveis ---- \n");
+            WriteLine("\n ---- Lista de Triciclos Disponíveis ---- \n");
 
             foreach (var triciclo in triciclos)
             {
                 ForegroundColor = ConsoleColor.DarkGreen;
                 WriteLine(
-                    $"Chassi: {triciclo.NumeroChassi}, Placa: {triciclo.Placa}, Modelo: {triciclo.NomeModelo} Rodas: {rodas}\n"
+                    $"Chassi: {triciclo.NumeroChassi}, Placa: {triciclo.Placa}, Modelo: {triciclo.NomeModelo}, Rodas: {rodas}\n"
                         + $"Potência: {triciclo.Potencia} (kw), Ano: {triciclo.DataFabricacao}, Cor: {triciclo.Cor}, Preço: {triciclo.Valor}\n"
                 );
                 ResetColor();
@@ -83,13 +83,13 @@ namespace Automovel.Models
                 where triciclo.Status == EStatus.Vendido 
                 select triciclo;
 
-            WriteLine("\n ---- Lista de triciclos Vendidos ---- \n");
+            WriteLine("\n ---- Lista de Triciclos Vendidos ---- \n");
 
             foreach (var triciclo in triciclosVendidos)
             {
                 ForegroundColor = ConsoleColor.DarkGreen;
                 WriteLine(
-                    $"Chassi: {triciclo.NumeroChassi}, Placa: {triciclo.Placa}, Modelo: {triciclo.NomeModelo} Rodas: {rodas}\n"
+                    $"Chassi: {triciclo.NumeroChassi}, Placa: {triciclo.Placa}, Modelo: {triciclo.NomeModelo}, Rodas: {rodas}\n"
                         + $"Potência: {triciclo.Potencia} (kw), Ano: {triciclo.DataFabricacao}, Cor: {triciclo.Cor}, Preço: {triciclo.Valor}\n"
                 );
                 ResetColor();
@@ -100,13 +100,13 @@ namespace Automovel.Models
                 where triciclo.Status == EStatus.VendidoMaiorValor
                 select triciclo;
 
-            WriteLine("\n ---- Lista de triciclos Vendidos (Maior Valor) ---- \n");
+            WriteLine("\n ---- Lista de Triciclos Vendidos (Maior Valor) ---- \n");
 
             foreach (var triciclo in triciclosVendidosMaiorValor)
             {
                 ForegroundColor = ConsoleColor.DarkGreen;
                 WriteLine(
-                    $"Chassi: {triciclo.NumeroChassi}, Placa: {triciclo.Placa}, Modelo: {triciclo.NomeModelo} Rodas: {rodas}\n"
+                    $"Chassi: {triciclo.NumeroChassi}, Placa: {triciclo.Placa}, Modelo: {triciclo.NomeModelo}, Rodas: {rodas}\n"
                         + $"Potência: {triciclo.Potencia} (kw), Ano: {triciclo.DataFabricacao}, Cor: {triciclo.Cor}, Preço: {triciclo.Valor}\n"
                 );
                 ResetColor();
@@ -117,13 +117,13 @@ namespace Automovel.Models
                 where triciclo.Status == EStatus.VendidoMenorValor
                 select triciclo;
 
-            WriteLine("\n ---- Lista de triciclos Vendidos (Menor Valor) ---- \n");
+            WriteLine("\n ---- Lista de Triciclos Vendidos (Menor Valor) ---- \n");
 
             foreach (var triciclo in triciclosVendidosMenorValor)
             {
                 ForegroundColor = ConsoleColor.DarkGreen;
                 WriteLine(
-                    $"Chassi: {triciclo.NumeroChassi}, Placa: {triciclo.Placa}, Modelo: {triciclo.NomeModelo} Rodas: {rodas}\n"
+                    $"Chassi: {triciclo.NumeroChassi}, Placa: {triciclo.Placa}, Modelo: {triciclo.NomeModelo}, Rodas: {rodas}\n"
                         + $"Potência: {triciclo.Potencia} (kw), Ano: {triciclo.DataFabricacao}, Cor: {triciclo.Cor}, Preço: {triciclo.Valor}\n"
                 );
                 ResetColor();
