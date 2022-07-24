@@ -30,35 +30,40 @@ namespace Automovel
                         Moto moto = new Moto();
                         moto.veiculos = moto.ListarVeiculos();
                         moto.VenderVeiculos();
+                        moto.Menu();
                         moto.EditarInformacoes();
-                        break;
+                    break;
 
                     case EMenu.Triciclo:
                         Triciclo triciclo = new Triciclo();
                         triciclo.veiculos = triciclo.ListarVeiculos();
                         triciclo.VenderVeiculos();
+                        triciclo.Menu();
                         triciclo.EditarInformacoes();
-                        break;
+                    break;
 
                     case EMenu.Carro:
                         Carro carro = new Carro();
                         carro.veiculos = carro.ListarVeiculos();
                         carro.VenderVeiculos();
+                        carro.Menu();
                         carro.EditarInformacoes();
-                        break;
+                    break;
 
                     case EMenu.Camionete:
                         Camionete camionete = new Camionete();
                         camionete.veiculos = camionete.ListarVeiculos();
                         camionete.VenderVeiculos();
+                        camionete.Menu();
                         camionete.EditarInformacoes();
-                        break;
+                    break;
+
                     case EMenu.Todos:
                         Lista lista = new Lista();
                         lista.ListarTodos();
-                        break;
-                    case EMenu.Historico:
+                    break;
 
+                    case EMenu.Historico:
                         WriteLine("\n ---- Histórico de Vendas ---- \n");
                         Moto Honda = new Moto();
                         HistoricoVendas vendas = new HistoricoVendas(Honda);
@@ -67,17 +72,16 @@ namespace Automovel
                             $"Chassi: {vendas.DadosDoVeiculo.NumeroChassi}, Placa: {vendas.DadosDoVeiculo.Placa}\n"
                                 + $"CPF: {vendas.CPFDoComprador}"
                         );
-                        break;
+                    break;
 
                     case EMenu.Sair:
                         condition = false;
                         WriteLine("Saindo...");
-                        break;
+                    break;
+
                     default:
-
                         WriteLine("Opção Inválida!");
-
-                        break;
+                    break;
                 }
             }
         }
