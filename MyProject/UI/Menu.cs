@@ -11,9 +11,9 @@ namespace Automovel.UI
             WriteLine("Informe um tipo de veículo: ");
             WriteLine(
                 "1 - Motos\n" +
-                "2 - Triciclo\n" +
+                "2 - Triciclos\n" +
                 "3 - Carros\n" +
-                "4 - Camionete\n" +
+                "4 - Camionetes\n" +
                 "5 - Todos\n"
             );
             WriteLine(
