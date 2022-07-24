@@ -4,10 +4,10 @@ namespace Automovel.Models
 {
     public class Camionete : Veiculo
     {
-        public int portas;
-        private string? combustivel;
+        int portas;
+        public string? combustivel;
         public string? Combustivel { get; set; }
-        private int capacidadeDeCarga;
+        public int capacidadeDeCarga;
         public int CapacidadeDeCarga
         {
             get => capacidadeDeCarga;
@@ -26,7 +26,9 @@ namespace Automovel.Models
         }
 
         public override void VenderVeiculos()
-        {
+        {  
+            WriteLine("\n --------------------------------------- \n");
+
             WriteLine("Deseja vender o veículo disponível? (s/n)");
 
             var input = ReadLine();
@@ -47,7 +49,9 @@ namespace Automovel.Models
                 ForegroundColor = ConsoleColor.Red;
                 WriteLine($"Placa: {Placa}, CPF comprador {CPF}, Valor: {Valor} \n");
                 ResetColor();
+
             }
+            WriteLine("\n --------------------------------------- \n");
         }
 
         public override List<Veiculo> ListarVeiculos()
@@ -115,7 +119,7 @@ namespace Automovel.Models
                 where camionete.Status == EStatus.VendidoMaiorValor
                 select camionete;
 
-            WriteLine("\n ---- Lista de Camionetes Vendidas Maior Valor ---- \n");
+            WriteLine("\n ---- Lista de Camionetes Vendidas (Maior Valor) ---- \n");
 
             foreach (var camionete in camionetesVendidasMaiorValor)
             {
@@ -132,7 +136,7 @@ namespace Automovel.Models
                 where camionete.Status == EStatus.VendidoMenorValor
                 select camionete;
 
-            WriteLine("\n ---- Lista de Camionetes Vendidas Menor Valor ---- \n");
+            WriteLine("\n ---- Lista de Camionetes Vendidas (Menor Valor) ---- \n");
 
             foreach (var camionete in camionetesVendidasMenorValor)
             {

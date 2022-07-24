@@ -15,7 +15,9 @@ namespace Automovel.Models
         }
 
         public override void VenderVeiculos()
-        {
+        {   
+            WriteLine("\n --------------------------------------- \n");
+
             WriteLine("Deseja vender algum veículo disponível? (s/n)");
 
             var input = ReadLine();
@@ -37,6 +39,7 @@ namespace Automovel.Models
                 WriteLine($"Placa: {Placa}, CPF comprador {CPF}, Valor: {Valor} \n");
                 ResetColor();
             }
+            WriteLine("\n --------------------------------------- \n");
         }
         public override List<Veiculo> ListarVeiculos()
         {   
@@ -97,7 +100,7 @@ namespace Automovel.Models
                 where triciclo.Status == EStatus.VendidoMaiorValor
                 select triciclo;
 
-            WriteLine("\n ---- Lista de triciclos Vendidos Maior Valor ---- \n");
+            WriteLine("\n ---- Lista de triciclos Vendidos (Maior Valor) ---- \n");
 
             foreach (var triciclo in triciclosVendidosMaiorValor)
             {
@@ -114,7 +117,7 @@ namespace Automovel.Models
                 where triciclo.Status == EStatus.VendidoMenorValor
                 select triciclo;
 
-            WriteLine("\n ---- Lista de triciclos Vendidos Menor Valor ---- \n");
+            WriteLine("\n ---- Lista de triciclos Vendidos (Menor Valor) ---- \n");
 
             foreach (var triciclo in triciclosVendidosMenorValor)
             {

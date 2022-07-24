@@ -4,7 +4,7 @@ namespace Automovel.Models
 {
     public class Moto : Veiculo
     {
-        public int rodas;
+        private int rodas;
 
         public Moto()
         {
@@ -16,6 +16,8 @@ namespace Automovel.Models
 
         public override void VenderVeiculos()
         {
+            WriteLine("\n --------------------------------------- \n");
+            
             WriteLine("Deseja vender algum veículo disponível? (s/n)");
 
             var input = ReadLine();
@@ -37,11 +39,12 @@ namespace Automovel.Models
                 WriteLine($"Placa: {Placa}, CPF comprador {CPF}, Valor: {Valor} \n");
                 ResetColor();
             }
+            WriteLine("\n --------------------------------------- \n");
         }
 
         public override List<Veiculo> ListarVeiculos()
         {
-            List<Veiculo> Motos = new List<Veiculo>();
+            List<Moto> Motos = new List<Moto>();
 
             Motos.Add(
                 new Moto { NumeroChassi = "CHASSI12454T4T456", Placa = "PLC1234", NomeModelo = "CG 160 Titan", 
@@ -110,7 +113,7 @@ namespace Automovel.Models
                 where moto.Status == EStatus.VendidoMaiorValor
                 select moto;
 
-            WriteLine("\n ---- Lista de Motos Vendidas Maior Valor ---- \n");
+            WriteLine("\n ---- Lista de Motos Vendidas (Maior Valor) ---- \n");
 
             foreach (var moto in motosVendidasMaiorValor)
             {
@@ -127,7 +130,7 @@ namespace Automovel.Models
                 where moto.Status == EStatus.VendidoMenorValor
                 select moto;
 
-            WriteLine("\n ---- Lista de Motos Vendidas Menor Valor ---- \n");
+            WriteLine("\n ---- Lista de Motos Vendidas (Menor Valor) ---- \n");
 
             foreach (var moto in motosVendidasMenorValor)
             {
@@ -139,7 +142,7 @@ namespace Automovel.Models
                 ResetColor();
             }
 
-            return Motos;
+            return base.ListarVeiculos();
         }
     }
 }
