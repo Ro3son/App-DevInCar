@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using Automovel.UI;
 using Automovel.Models;
 using static System.Console;
@@ -29,22 +30,33 @@ namespace Automovel
                         Moto moto = new Moto();
                         moto.veiculos = moto.ListarVeiculos();
                         moto.VenderVeiculos();
-                    break;
+                        moto.EditarInformacoes();
+                        break;
 
                     case EMenu.Triciclo:
-
-                    break;
+                        Triciclo triciclo = new Triciclo();
+                        triciclo.veiculos = triciclo.ListarVeiculos();
+                        triciclo.VenderVeiculos();
+                        triciclo.EditarInformacoes();
+                        break;
 
                     case EMenu.Carro:
-
-                    break;
+                        Carro carro = new Carro();
+                        carro.veiculos = carro.ListarVeiculos();
+                        carro.VenderVeiculos();
+                        carro.EditarInformacoes();
+                        break;
 
                     case EMenu.Camionete:
-
-                    break;
+                        Camionete camionete = new Camionete();
+                        camionete.veiculos = camionete.ListarVeiculos();
+                        camionete.VenderVeiculos();
+                        camionete.EditarInformacoes();
+                        break;
                     case EMenu.Todos:
-
-                    break;
+                        Lista lista = new Lista();
+                        lista.ListarTodos();
+                        break;
                     case EMenu.Historico:
 
                         WriteLine("\n ---- Histórico de Vendas ---- \n");
@@ -55,7 +67,7 @@ namespace Automovel
                             $"Chassi: {vendas.DadosDoVeiculo.NumeroChassi}, Placa: {vendas.DadosDoVeiculo.Placa}\n"
                                 + $"CPF: {vendas.CPFDoComprador}"
                         );
-                    break;
+                        break;
 
                     case EMenu.Sair:
                         condition = false;
@@ -65,7 +77,7 @@ namespace Automovel
 
                         WriteLine("Opção Inválida!");
 
-                    break;
+                        break;
                 }
             }
         }
