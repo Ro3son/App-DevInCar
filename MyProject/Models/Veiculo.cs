@@ -1,3 +1,5 @@
+using static System.Console;
+
 namespace Automovel.Models
 {
     public abstract class Veiculo
@@ -25,16 +27,32 @@ namespace Automovel.Models
             CPF = CPF;
             Tipo = Tipo;
             Status = Status;
-
         }
 
         public abstract void VenderVeiculos();
-        
+
         public List<Veiculo> veiculos = new List<Veiculo>();
-        public virtual List<Veiculo> ListarVeiculos() 
-        { 
+
+        public virtual List<Veiculo> ListarVeiculos()
+        {
             return veiculos;
         }
+
         public void EditarInformacoes() { }
+
+        public void Menu()
+        {
+            ForegroundColor = ConsoleColor.DarkYellow;
+            WriteLine(
+                "1 - Motos, "
+                    + "2 - Triciclos, "
+                    + "3 - Carros, "
+                    + "4 - Camionetes, "
+                    + "5 - Todos, "
+                    + "6 - Histórico, "
+                    + "0 - Sair\n"
+            );
+            ResetColor();
+        }
     }
 }
