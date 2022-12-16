@@ -4,45 +4,36 @@ namespace Automovel.Models
 {
     public class Carro : Veiculo
     {
-        int portas;
-        public string? combustivel;
+        private readonly int portas = 4;
         public string? Combustivel { get; set; }
 
         public Carro()
         {
-            portas = 4;
-            Combustivel = Combustivel;
-            CPF = CPF;
-            Valor = Valor;
-            Placa = Placa;
+            NumeroChassi = "CHASSIGHJOLNQSED4";
+            CPF = "111.222.333-45";
+            Valor = 45600M;
         }
 
         public override void VenderVeiculos()
         {
-            WriteLine("\n --------------------------------------- \n");
-
             WriteLine("Deseja vender o veículo disponível? (s/n)");
 
-            var input = ReadLine();
+            var entrada = ReadLine();
+
             WriteLine("\n");
 
-            if (input == "s")
+            if (entrada == "s")
             {
-                WriteLine("Digite o ID(placa) do veículo: ");
-                Placa = ReadLine();
+                Carro carro = new();
 
-                WriteLine("Digite o CPF(somente números) do comprador: ");
-                CPF = ReadLine();
-
-                WriteLine("Digite o valor do veículo: ");
-                Valor = Convert.ToDecimal(ReadLine());
+                Venda venda = new(carro);
 
                 WriteLine("\n ---- Carro Vendido! ---- \n");
                 ForegroundColor = ConsoleColor.Red;
-                WriteLine($"Placa: {Placa}, CPF comprador: {CPF}, Valor: {Valor} \n");
+                venda.HistoricoVenda();
                 ResetColor();
+                WriteLine("\n --------------------- \n");
             }
-            WriteLine("\n --------------------------------------- \n");
         }
 
         public override List<Veiculo> ListarVeiculos()
@@ -84,6 +75,8 @@ namespace Automovel.Models
                 );
                 ResetColor();
             }
+
+  
 
             var carrosVendidos = 
                 from carro in Carros 

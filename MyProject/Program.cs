@@ -27,51 +27,44 @@ namespace Automovel
                 switch (options)
                 {
                     case EMenu.Moto:
-                        Moto moto = new Moto();
-                        moto.veiculos = moto.ListarVeiculos();
+                        Moto moto = new();
+                        moto.ListarVeiculos();
                         moto.VenderVeiculos();
-                        moto.Menu();
-                        moto.EditarInformacoes();
+                        Veiculo.EditarInformacoes();
+                        Veiculo.Menu();
                     break;
 
                     case EMenu.Triciclo:
-                        Triciclo triciclo = new Triciclo();
-                        triciclo.veiculos = triciclo.ListarVeiculos();
+                        Triciclo triciclo = new();
+                        triciclo.ListarVeiculos();
                         triciclo.VenderVeiculos();
-                        triciclo.Menu();
-                        triciclo.EditarInformacoes();
+                        Veiculo.EditarInformacoes();
+                        Veiculo.Menu();
                     break;
 
                     case EMenu.Carro:
-                        Carro carro = new Carro();
-                        carro.veiculos = carro.ListarVeiculos();
+                        Carro carro = new();
+                        carro.ListarVeiculos();
                         carro.VenderVeiculos();
-                        carro.Menu();
-                        carro.EditarInformacoes();
+                        Veiculo.EditarInformacoes();
+                        Veiculo.Menu();
                     break;
 
                     case EMenu.Camionete:
-                        Camionete camionete = new Camionete();
-                        camionete.veiculos = camionete.ListarVeiculos();
+                        Camionete camionete = new();
+                        camionete.ListarVeiculos();
                         camionete.VenderVeiculos();
-                        camionete.Menu();
-                        camionete.EditarInformacoes();
+                        Veiculo.EditarInformacoes();
+                        Veiculo.Menu();
                     break;
 
                     case EMenu.Todos:
-                        Lista lista = new Lista();
+                        Lista lista = new();
                         lista.ListarTodos();
                     break;
 
                     case EMenu.Historico:
                         WriteLine("\n ---- Histórico de Vendas ---- \n");
-                        Moto Honda = new Moto();
-                        HistoricoVendas vendas = new HistoricoVendas(Honda);
-                        WriteLine($"{vendas.Data}");
-                        WriteLine(
-                            $"Chassi: {vendas.DadosDoVeiculo.NumeroChassi}, Placa: {vendas.DadosDoVeiculo.Placa}\n"
-                                + $"CPF: {vendas.CPFDoComprador}"
-                        );
                     break;
 
                     case EMenu.Sair:
